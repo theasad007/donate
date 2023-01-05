@@ -125,6 +125,12 @@ header::before {
     border-bottom: 2px solid #DADADA;
     font-size: 24px;
     margin-bottom: 40px;
+    transition: 0.3s all;
+}
+#other-amount:focus {
+    outline: 0;
+    color: #121212;
+    border-color:#707070;
 }
 
 /* Plan Styles */
@@ -226,6 +232,10 @@ header::before {
 	color: #332F2F;
 	font-weight: 600;
 	width: 350px;
+}
+#subscription-email:focus-visible  {
+    border: 0;
+    outline: 0;
 }
 #subscription-submit {
 	background: #FF5959;
