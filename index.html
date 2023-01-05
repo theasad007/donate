@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Today</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/donate-style.css">
 </head>
 
@@ -31,7 +31,7 @@
     <!-- Header Section -->
 
     <!-- Donate Form -->
-    <section>
+    <section class="donate-section">
         <div class="section-information">
             <h2 class="section-title">Donate Today</h2>
             <p class="section-description">
@@ -42,38 +42,33 @@
         </div>
         <div class="donate-form">
             <form action="">
-                <div>
-                    <label for="100">100 TK
-                        <input type="radio" id="100" name="amount" value="100">
-                    </label>
+                <div class="radio-buttons">
+                    <input type="radio" id="100" name="amount" value="100" hidden>
+                    <label for="100">100 TK</label>
                     
-                    <label for="200">200 TK
-                        <input type="radio" id="200" name="amount" value="200">
-                    </label>
+                    <input type="radio" id="200" name="amount" value="200" hidden>
+                    <label for="200">200 TK</label>
                     
-                    <label for="500">500 TK
-                        <input type="radio" id="500" name="amount" value="500">
-                    </label>
+                    <input type="radio" id="500" name="amount" value="500" hidden>
+                    <label for="500">500 TK</label>
                     
-                    <label for="1000">1000 TK
-                        <input type="radio" id="1000" name="amount" value="1000">
-                    </label>
+                    <input type="radio" id="1000" name="amount" value="1000" hidden>
+                    <label for="1000">1000 TK</label>
                     
-                    <label for="5000">5000 TK
-                        <input type="radio" id="5000" name="amount" value="5000">
-                    </label>
+                    <input type="radio" id="5000" name="amount" value="5000" hidden>
+                    <label for="5000">5000 TK</label>
                 </div>
-                <div>
-                    <input type="number" name="amount" id="other-amount" placeholder="Other Amount (Taka)">
+                <div class="other-amount-field">
+                    <input type="text" name="amount" id="other-amount" placeholder="Other Amount (Taka)">
                 </div>
-                <input type="submit" value="Donate Now">
+                <input type="submit" value="Donate Now"  class="button-regular">
             </form>
         </div>
     </section>
     <!-- Donate Form -->
 
     <!-- Donate Plan -->
-    <section>
+    <section class="plan-section">
         <div class="section-information">
             <h2 class="section-title">Our Donate Plan</h2>
             <p class="section-description">
@@ -83,21 +78,21 @@
             </p>
         </div>
         <div class="plans-box">
-            <div class="plan">
+            <div class="plan one">
                 <img src="images/icons/food.png" alt="" class="plan-icon">
                 <h3 class="plan-title">Food for a family</h3>
                 <p class="plan-description">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
                 </p>
             </div>
-            <div class="plan">
+            <div class="plan two">
                 <img src="images/icons/shelter.png" alt="" class="plan-icon">
                 <h3 class="plan-title">Shelter for a family</h3>
                 <p class="plan-description">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
                 </p>
             </div>
-            <div class="plan">
+            <div class="plan three">
                 <img src="images/icons/frame.png" alt="" class="plan-icon">
                 <h3 class="plan-title">Education for a child</h3>
                 <p class="plan-description">
@@ -109,13 +104,13 @@
     <!-- Donate Plan -->
 
     <!-- Contribute -->
-    <section>
+    <section class="contribute-section">
         <div class="contribute-information">
             <h2 class="contribute-title">Their lives depend on your donation</h2>
-            <p>
+            <p class="contribute-description">
                 Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim
             </p>
-            <p>
+            <p class="contribute-description">
                 Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset.
             </p>
             <button class="button-regular"> How To Contribute?</button>
@@ -124,16 +119,16 @@
             <img src="images/donation0.jpg" alt="">
         </div>
     </section>
-    <section>
+    <section class="contribute-section">
         <div class="contribute-image">
             <img src="images/donation0.jpg" alt="">
         </div>
         <div class="contribute-information">
             <h2 class="contribute-title">Their lives depend on your donation</h2>
-            <p>
+            <p class="contribute-description">
                 Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset. No duo populo animal noluisse, enim
             </p>
-            <p>
+            <p class="contribute-description">
                 Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli deterruisset.
             </p>
             <button class="button-regular"> How To Contribute?</button>
@@ -142,9 +137,9 @@
     <!-- Contribute -->
 
     <!-- Update -->
-    <section>
+    <section class="email-section">
         <div class="section-information">
-            <h2 class="section-title">Our Donate Plan</h2>
+            <h2 class="section-title">Get My Updates</h2>
             <p class="section-description">
                 Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli 
                 <br>
@@ -154,8 +149,8 @@
         <div class="email-box">
             <form action="">
                 <div class="subscribe">
-                    <input type="email" name="" id="subscription-email">
-                    <input type="submit" value="Subscribe">
+                    <input type="email" name="" id="subscription-email" placeholder="Email">
+                    <input type="submit" id="subscription-submit" value="Subscribe">
                 </div>
             </form>
         </div>
@@ -163,8 +158,8 @@
     <!-- Update -->
 
     <footer>
-        <h2>Be Humble</h2>
-        <p>I'm gonna do it</p>
+        <h2 class="footer-title">Be Humble</h2>
+        <p class="footer-description">I'm gonna do it</p>
     </footer>
 
 </body>

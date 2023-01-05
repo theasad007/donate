@@ -1,6 +1,11 @@
+/* Reset Styles */
+
 * {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+/* Banner Styles */
 
 header {
     position: relative;
@@ -25,10 +30,228 @@ header::before {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: -1;
 }
+
 .header-information {
+    text-align: center;
+}
+
+.banner-title {
+    color: #fff;
+    font-size: 86px;
+    margin-bottom: 30px;
+}
+
+.banner-description {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.button-regular {
+    background: #FF5959;
+    border: 0;
+    padding: 15px 40px;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.button-regular:hover {
+    background: #e65353;
+}
+
+/* Donate Sections Styles */
+.donate-section {
+    padding-top: 150px;
+}
+
+.section-information {
+    text-align: center;
+}
+
+.section-title {
+    color: #121212;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    font-size: 24px;
+    color: #707070;
+    margin-bottom: 60px;
+}
+
+.donate-form {
+    text-align: center;
+    width: 890px;
+    margin: 0 auto;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.donate-form label {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    background: #FAFAFA;
+    line-height: 150px;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    font-size: 28px;
+    color: #707070;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.donate-form input[type="radio"]:checked+label {
+    background-color: #FFEEEE;
+    color: #FF5959;
+    border-color: #FF5959;
+}
+
+#other-amount {
+    width: 100%;
+    color: #807B7B;
+    text-align: center;
+    border: 0;
+    padding: 15px 0;
+    border-bottom: 2px solid #DADADA;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Plan Styles */
+.plan-section {
+    padding: 150px 0;
+}
+
+.plans-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.plan {
+    padding: 70px 35px;
+    border-radius: 6px;
+}
+
+.plan.one {
+    background: #EDF5F6;
+}
+
+.plan.two {
+    background: #FFEEEE;
+}
+
+.plan.three {
+    background: #FFF4D6;
+}
+.plan-icon {
+	height: 52px;
+	margin-bottom: 30px;
+}
+.plan-title {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+.plan-description {
+	font-size: 22px;
+	color: #707070;
+	line-height: 1.5;
+}
+
+/* Contribute Styles */
+.contribute-section {
+	width: 1300px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 100px;
+	padding-bottom: 150px;
+}
+.contribute-title {
+	font-size: 56px;
+	font-weight: 700;
+}
+.contribute-title {
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.contribute-description {
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #707070;
+}
+.contribute-information .button-regular {
+	margin-top: 20px;
+}
+.contribute-image img {
+	border-radius: 6px;
+}
+
+/* Email Box Styles */
+.email-section {
+	padding-bottom: 150px;
+}
+.email-box {
+	width: 1080px;
+	margin: 0 auto;
+	background: #FFF4D6;
+	padding: 100px;
+}
+.subscribe {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.subscribe input {
+	border: 0;
+	padding: 20px 20px;
+	font-size: 22px;
+}
+#subscription-email {
+	background: #D9D9D9;
+	border-radius: 6px 0 0 6px;
+	color: #332F2F;
+	font-weight: 600;
+	width: 350px;
+}
+#subscription-submit {
+	background: #FF5959;
+	color: #fff;
+	padding: 20px 40px;
+	border-radius: 0 6px 6px 0;
+	cursor: pointer;
+    transition: 0.3s all;
+}
+#subscription-submit:hover {
+    background: #e65353;
+}
+
+/* Footer */
+footer {
+	padding: 70px 0;
+	background: #0B0D17;
 	text-align: center;
 }
-.banner-title {
-	color: #fff;
-	font-size: 72px;
+.footer-title {
+	font-family: 'Lobster Two', cursive;
+	font-size: 56px;
+	color: #FF5959;
+	margin-bottom: 25px;
+}
+.footer-description {
+	color: #D9DBE1;
+	font-size: 22px;
 }
